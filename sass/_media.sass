@@ -1,0 +1,388 @@
+
+@media screen and (max-width: 950px) 
+
+	.header-wrap
+		header
+			padding: 0
+
+			.logo
+				margin-left: 15px
+				padding-bottom: 10px
+
+			.header__menu
+				float: right
+
+				.menu-toggle
+					display: block
+					color: #fff
+					padding: 40px 20px 20px
+
+
+				.menu
+					text-align: center 
+					margin-right: 0 
+					margin-top: 0 
+					background: #fff
+					position: fixed
+					z-index: 1
+					right: -320px
+					top: 0
+					width: 320px
+					transition: all 0.5s linear
+					height: 100%
+		
+					ul
+						margin-top: 50px
+						li
+							display: block !important
+							padding: 0 9px
+
+							a
+								text-decoration: none
+								color: #b8b8b8
+								text-transform: uppercase
+								font-family: "Montserrat-Bold"
+								font-size: 13px
+								padding-bottom: 0
+								display: inline-block
+								line-height: 48px
+								border-bottom: 1px solid #fff
+
+								&:hover
+									color: #18cfab
+									border-bottom: 1px solid #18cfab
+						
+					.menu-toggle
+						display: block
+						float: left
+
+						.active
+							color: #18cfab
+							border-bottom: 1px solid #18cfab
+				
+				.active_menu
+					right: 0
+
+				.search
+					float: none !important
+					margin-top: 29px
+					cursor: pointer
+					position: relative
+					z-index: 1
+
+
+@media screen and (max-width: 992px)
+
+	.about-company
+		background: #222b34
+
+		.about-company__block
+			width: 100%
+			float: none
+			margin: 0 auto
+	
+
+
+	.our-works
+		width: 33.33% !important
+		margin-bottom: -8px
+
+	.news-wrap
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: flex-start
+
+		.news-block
+			width: 32.2%
+			margin-right: 1%
+
+			img
+				width: 100%
+
+	.our-team__item-sicial
+		width: 100%
+
+		li
+			height: 55px !important
+	
+	.not-only
+		background: $durk-color
+
+		.not-only__list-wrap
+			width: 70%
+			float: none
+			margin-bottom: 10px
+			margin-left: 40%
+
+	.footer-wrap
+
+		footer
+			display: flex
+			justify-content: flex-start
+			flex-wrap: wrap
+
+			.footer__first-col
+				width: 45%
+				margin-right: 3%
+
+			.footer__second-col
+				width: 45%
+
+			.footer__third-col
+				width: 100%
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+
+				.footer__tags
+					width: 48%
+
+				.footer__newsletter
+					width: 48%
+
+			.footer__fourth-col
+				width: 100%
+
+				a
+					display: block
+
+
+@media screen and (min-width: 640px) and (max-width: 992px)
+
+	.news-wrap
+
+		.news-block
+
+			&:nth-child(3n)
+				margin-right: 0
+
+@media screen and (max-width: 800px)
+
+	h1 
+		font-size: 64px
+		line-height: 84px
+
+	.main-section__before-title
+		font-size: 28px
+
+	.main-section__after-title
+		font-size: 28px
+
+	.main-section-wrap
+		padding-top: 160px
+
+	.main-section__buttons 
+		margin-bottom: 80px
+
+	.advantages 
+
+		.advantages__advantage 
+			width: 50%
+
+	.features
+
+		 .feature
+    		width: 47%
+
+
+	.our-team__item
+		width: 48% !important
+		margin-bottom: 20px
+
+
+	.our-team__item-sicial
+		width: 100%
+
+		li
+			height: 65px !important
+
+			a
+				margin-top: calc(40% - 11px)!important
+
+	.map
+		width: 100%
+		height: 550px
+		float: none
+
+	.keep-in
+		margin-top: 100px
+
+	.keep-in-touch
+		width: 100%
+		float: none
+		margin-top: 0
+		text-align: center
+
+		h2
+
+			&:after
+				content: ""
+				position: absolute
+				width: 88px
+				height: 5px
+				bottom: -35px
+				left: calc(50% - 44px)
+				background: url(../img/h2_after.png)
+	
+	.footer-wrap
+		margin-top: 0
+
+
+@media screen and (max-width: 640px)
+	
+	.our-works
+		width: 50% !important
+		margin-bottom: -8px
+
+	.news-wrap
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: flex-start
+
+		.news-block
+			width: 48%
+			margin-right: 2%
+
+			img
+				width: 100%
+
+			&:nth-child(2n)
+				margin-right: 0
+
+	footer
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+		padding: 70px 15px !important
+
+		.footer__first-col
+			width: 100% !important
+			margin-right: 0 !important
+			margin-bottom: 30px
+
+		.footer__second-col
+			width: 100% !important
+
+		.footer__third-col
+			width: 100%
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+
+			.footer__tags
+				width: 100% !important
+
+			.footer__newsletter
+				width: 100% !important
+				margin-bottom: 40px
+
+		.footer__fourth-col
+			width: 100%
+
+			a
+				display: block
+
+
+
+@media screen and (max-width: 480px)
+
+	h1 
+		font-size: 52px !important
+		line-height: 64px
+
+	.main-section__buttons
+		line-height: 90px
+		text-align: center
+
+	.main-section__after-title
+		padding-bottom: 50px
+
+	.feature
+		width: 100% !important
+		margin-bottom: 40px !important
+
+	h5
+		font-size: 28px !important	
+		line-height: 40px !important
+
+	.not-only 
+		h5
+
+			span
+				font-size: 28px
+
+	.not-only__list-wrap
+		width: 100%
+		float: none
+		margin-bottom: 15px
+		margin-left: 10% !important
+		text-align: center !important
+
+		.not-only__list
+			text-align: left !important
+
+	.our-services-tabs
+
+		li
+
+			a
+				padding-top: 10px
+				padding-bottom: 10px
+
+@media screen and (max-width: 375px)
+
+	.advantages__advantage
+		width: 100% !important
+
+	section
+		max-width: 1170px
+		margin: 0 auto
+		padding: 50px 15px
+
+	h2
+		font-size: 28px !important
+		line-height: 36px !important
+		margin-bottom: 80px !important
+
+	.our-works-tabs
+		font-size: 0
+		margin-bottom: 70px
+
+		li
+			display: inline-block
+
+			a
+				padding: 10px 10px !important
+
+	.our-works
+		width: 100% !important
+
+	.our-services-content__img
+		height: 139px
+		width: 194px
+		float: none
+		margin: 0 auto 30px
+	
+	.news-wrap
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: flex-start
+
+		.news-block
+			width: 100%
+			margin-right: 0 !important
+
+	.our-team__item
+		width: 100% !important
+		margin-bottom: 20px
+
+	.news-block
+		width: 100%
+		margin-right: 0 !important
+
+		img
+			width: 100%
+

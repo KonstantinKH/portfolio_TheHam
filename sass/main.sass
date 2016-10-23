@@ -1,0 +1,997 @@
+@import "bourbon"
+@import reset
+
++font-face("Montserrat-Bold", "../fonts/Montserrat/Montserrat-Bold", normal, $file-formats: eot otf svg ttf woff)
++font-face("Montserrat-Light", "../fonts/Montserrat/Montserrat-Light", normal, $file-formats: eot otf svg ttf woff)
++font-face("Montserrat-Regular", "../fonts/Montserrat/Montserrat-Regular", normal, $file-formats: eot otf svg ttf woff)
+
+$main-color: #18cfab
+$durk-color: #233641
+
+body
+	font-family: "Montserrat-Light"
+	font-size: 14px
+	line-height: 25px
+	color: #777777
+	text-align: center
+
+h1
+	font-family: "Montserrat-Regular"
+	font-size: 79px
+	line-height: 84px
+	color: #fff
+	text-transform: uppercase
+	padding: 30px 0 33px 0
+
+h2
+	font-family: "Montserrat-Regular"
+	font-size: 36px
+	line-height: 46px
+	color: #fff
+	position: relative
+	margin-bottom: 110px
+
+	&:after
+		content: ""
+		position: absolute
+		width: 88px
+		height: 5px
+		bottom: -35px
+		left: calc(50% - 44px)
+		background: url(../img/h2_after.png)
+
+
+h3
+	font-family: "Montserrat-Bold"
+	font-size: 18px
+	color: #717171
+
+h4
+	font-family: "Montserrat-Bold"
+	font-size: 16px
+	color: #fff
+
+.section-wrap
+	max-width: 1920px
+	width: 100%
+	overflow: hidden
+
+.footer-wrap
+	@extend .section-wrap
+
+.white-section
+	background: #fff
+
+	h2
+		color: #4e4e4e
+
+section
+	max-width: 1170px
+	margin: 0 auto
+	padding: 100px 15px
+
+.green-button-border
+	color: #fff
+	text-decoration: none
+	text-transform: uppercase
+	padding: 25px 28px 25px
+	border-radius: 5px
+	font-family: "Montserrat-Bold"
+	font-size: 13px
+	background: url(../img/green_button_bg.png) no-repeat
+	baground-size: cover
+
+
+.right-button
+	color: #fff
+	text-decoration: none
+	text-transform: uppercase
+	background: url(../img/rigth_button_bg.png) no-repeat
+	baground-size: cover
+	padding: 25px 28px
+	border-radius: 5px
+	font-family: "Montserrat-Bold"
+	font-size: 13px
+	white-space: nowrap
+
+.header-wrap
+	background: rgba(68,67,62, 0.7)
+	box-sizing: border-box
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 1
+
+	header
+		max-width: 1170px
+		padding: 0 15px 0 15px
+		margin: 0 auto
+		text-align: left
+
+
+		.logo
+			float: left
+			padding-top: 20px
+			
+			a
+				font-size: 32px
+				color: #fff
+				text-decoration: none
+				
+				img
+					height: 70px
+					width: 60px
+						
+				.logo__text
+					position: relative
+					top: -23px
+
+				.logo__green-text
+					color: #18cfab
+
+	.header__menu
+		float: right
+
+		.menu-toggle
+			display: none
+
+		.menu
+			text-align: right
+			margin-right: 20px
+			display: inline-block
+
+			ul
+				display: inline-block
+
+				li
+					display: inline-block
+					padding: 0 9px
+
+					a
+						text-decoration: none
+						color: #b8b8b8
+						text-transform: uppercase
+						font-family: "Montserrat-Bold"
+						font-size: 13px
+						line-height: 110px
+						display: inline-block
+
+						&:hover
+							color: #18cfab
+							border-bottom: 1px solid #18cfab
+
+
+					.active
+						color: #18cfab
+						border-bottom: 1px solid #18cfab
+
+		.search
+			cursor: pointer
+			position: relative
+			display: inline-block
+			vertical-align: middle
+
+			.search-field
+				position: absolute
+				right: 0
+				top: 100px
+				display: none
+
+				form
+					background: #fff
+					width: 660px
+					box-sizing: border-box
+					overflow: hidden
+					padding: 7px 0 7px 7px
+
+					input[type="text"]
+						border: none
+						width: 91%
+						padding: 12px 0 12px 10px
+						display: block
+						float: left
+
+					input[type="image"]
+						background: $main-color
+						padding: 11px
+						display: block
+
+.main-section-wrap
+	background: url(http://placekitten.com/1920/1009)
+	padding-top: 260px
+
+.main-section
+	position: relative
+
+.main-section__before-title
+	color: #fff
+	text-transform: uppercase
+	font-size: 35px
+	line-height: 35px
+	font-family: "Montserrat-Bold"
+
+	span
+		color: #18cfab
+
+.main-section__after-title
+	font-size: 34px
+	line-height: 34px
+	font-family: "Montserrat-Light"
+	color: #d4d4d4
+	padding-bottom: 145px
+
+.main-section__buttons
+	margin-bottom: 140px
+	
+	a
+		margin: 0 24.5px
+
+.section-wrap__slider
+	position: absolute
+	bottom: 180px
+	right: -50px
+	display: none
+
+.advantages
+	width: 100%
+	overflow: hidden
+
+	.advantages__advantage
+		width: 25%
+		float: left
+		padding: 90px 0 110px
+		font-size: 20px
+		font-family: "Montserrat-Bold"
+		text-transform: uppercase
+		box-sizing: border-box
+		height: 375px
+
+		.img-wrap
+			height: 100px
+			margin-bottom: 40px
+
+	.advantage_dark
+		background: #1c2a33
+		color: #18cfab
+		border-top: 7px solid #18cfab
+
+	.advantage_green
+		background: #18cfab
+		color: #fff
+
+.advantages_second
+
+	.advantages__advantage
+		padding: 60px 0 110px
+
+	.white_border
+		border-top: 7px solid #fff
+
+	.black_border
+		border-top: 7px solid #1c2a33
+
+.advantages_second
+	
+	.advantages__amount
+		margin-top: 30px
+
+	.advantage__dark-text
+		text-transform: none
+		font-family: "Montserrat-Light"
+
+
+
+.features
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: -75px
+	justify-content: space-between
+
+	.feature
+		width: 28.5%
+		text-align: left
+		margin-bottom: 75px
+
+		h3
+			margin-bottom: 24px
+
+			span
+				position: relative
+				top: -6px
+				left: 20px
+
+		&:nth-child(3n)
+			margin-right: 0
+	
+.about-company
+	background: #222b34 url(../img/about-company_bg.png) no-repeat 0 100%
+	background-size: 47%
+
+	.about-company__block
+		max-width: 555px
+		width: 50%
+		float: right
+		
+		.about-company__tabs
+			margin-bottom: 60px
+
+			.about-company__tabs-items
+				display: inline-block
+				margin-right: 22px
+
+				a
+					color: #fff
+					text-decoration: none
+					text-transform: uppercase
+					font-size: 16px
+					font-family: "Montserrat-Bold"
+					padding-top: 6px
+
+					&:hover
+						color: #18cfab
+						border-top: 1px solid #18cfab
+
+					&:focus
+						color: #18cfab
+						border-top: 1px solid #18cfab
+
+		.skill-tabs
+			color: #fff
+			text-transform: uppercase
+			font-size: 13px
+			font-family: "Montserrat-Regular"
+			text-align: left
+			margin-bottom: 100px
+			
+			.skill-tab
+				margin-bottom: 10px
+				border: 1px solid #fff
+				border-radius: 5px
+				height: 30px
+				
+				span
+					height: 32px
+					display: block
+					border-top-left-radius: 5px
+					border-bottom-left-radius: 5px
+					position: relative
+					top: -1px
+					left: -1px
+					padding-left: 15px
+					line-height: 32px
+			
+			.skill-tab_interface
+				span
+					background: #9c5da5
+					width: 70%
+
+			.skill-tab_design
+				span
+					background: #11b0de
+					width: 85%
+
+			.skill-tab_wordpress
+				span
+					background: #d67f7f
+					width: 65%
+
+			.skill-tab_html
+				span
+					background: #20bc9d
+					width: 87%
+
+			.skill-tab_app
+				span
+					background: #bb8a36
+					width: 80%
+
+.beige-section
+	background: #f8fcfe
+
+	h2
+		color: #4e4e4e
+
+	.our-works-tabs
+		font-size: 0
+		margin-bottom: 70px
+
+		li
+			display: inline-block
+
+			a
+				text-decoration: none
+				color: #717171
+				font-size: 14px
+				font-family: "Montserrat-Regular"
+				display: inline-block
+				padding: 20px 28px
+				background: #fff
+				border: 1px solid #ebebeb
+				border-top: 2px solid #ebebeb
+
+
+				&:hover
+					color: #18cfab
+					border-top: 2px solid #18cfab
+
+				&:focus
+					color: #18cfab
+					border-top: 2px solid #18cfab
+
+	.our-works-wrap
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 70px
+
+		.our-works
+			width: 25%
+			margin-bottom: -7px
+
+			a
+				display: block
+
+				img
+					width: 100%
+
+	.more-works
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 14px
+		font-family: "Montserrat-Bold"
+		background: #18cfab
+		padding: 23px 25px 23px 54px
+		border-radius: 5px
+		position: relative
+	
+		&:before
+			content: ""
+			position: absolute
+			top: 24px
+			left: 21px
+			background: url(../img/more-works_bg.png) no-repeat
+			width: 16px
+			height: 16px
+
+.our-services-tabs
+	margin-bottom: 70px
+	font-size: 0
+
+	li
+		display: inline-block
+		width: 16.6%
+		min-width: 130px
+
+		a
+			text-decoration: none
+			color: #717171
+			font-size: 14px
+			font-family: "Montserrat-Regular"
+			background: #f8fcfe
+			border: 1px solid #ebebeb
+			display: block
+			padding-top: 22px
+			padding-bottom: 22px
+			width: 100%
+
+
+			&:hover
+				color: #fff
+				background: #18cfab
+				position: relative
+
+				&:after
+					content: ""
+					position: absolute
+					left: calc(50% - 7.5px)
+					bottom: -7.5px
+					width: 15px
+					height: 15px
+					background: #18cfab
+					transform: rotate(45deg)
+
+
+
+			&:focus
+				color: #fff
+				background: #18cfab
+				position: relative
+
+				&:after
+					content: ""
+					position: absolute
+					left: calc(50% - 7.5px)
+					bottom: -7.5px
+					width: 15px
+					height: 15px
+					background: #18cfab
+					transform: rotate(45deg)
+
+.our-services-content__img
+	height: 139px
+	width: 194px
+	float: left
+	margin-right: 20px
+
+.our-services-content__text
+	text-align: left
+
+.just-buy
+	background: #40474b
+
+	h5
+		text-transform: uppercase
+		color: #18cfab
+		font-size: 40px
+		font-family: "Montserrat-Bold"
+		margin-bottom: 30px
+		line-height: 50px
+
+	p
+		color: #d8d8d8
+		font-size: 16px
+		font-family: "Montserrat-Regular"
+		margin-bottom: 75px
+
+.news-wrap
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+
+.news-block
+	position: relative
+	border: 1px solid #edeeee
+	background: #f8fcfe
+	margin-bottom: 30px
+	text-align: left
+	width: 22%
+
+	img
+		width: 100%
+		
+	&:hover
+		.news-block__date
+			background: $main-color
+
+		.news-block_description
+
+			a
+				color: $main-color
+
+.news-block__date
+	position: absolute
+	top: 0
+	right: 0
+	background: #203e38
+	color: #fff
+	width: 65px
+	height: 65px
+	font-size: 16px
+	font-family: "Montserrat-Regular"
+	padding: 10px 19px
+	box-sizing: border-box
+
+.news-block_description
+	padding-left: 20px
+	padding-bottom: 12px
+	
+	a
+		text-decoration: none
+		color: #717171
+
+.news-block__author
+	padding-right: 15px
+	border-right: 1px solid #777777
+
+.news-block__comments
+	padding-left: 15px
+
+.price-table
+	font-size: 0
+
+	.price-table__item
+		background: #f8fcfe
+		border: 1px solid #e1e1e1
+		border-radius: 5px
+		width: 285px
+		display: inline-block
+		padding-top: 25px
+
+		table
+			width: 100%
+
+			th
+				text-transform: uppercase
+				font-size: 24px
+				font-family: "Montserrat-Bold"
+				color: #717171
+				padding-bottom: 30px
+
+			td
+				font-size: 14px
+				border-top: 0.5px solid #e1e1e1
+				border-bottom: 0.5px solid #e1e1e1
+				padding-top: 15px
+				padding-bottom: 15px
+
+
+			.price-table__price
+				background: #2e4a5b
+				padding: 30px 0
+				color: #fff
+
+				span
+					font-size: 39px
+
+			.price-table__buy-now
+				padding: 40px 0
+				
+				a
+					text-decoration: none
+					color: #fff
+					padding: 20px 50px
+					background: #2e4a5b
+					border-radius: 4px
+	
+		&:hover
+			box-shadow: 0 0 10px rgba(128,128,128,0.5)
+			position: relative
+			z-index: 1
+
+			.price-table__price
+					background: #18cfab
+
+			table
+
+				th
+					color: #18cfab
+
+			.price-table__buy-now
+				
+				a
+					background: #18cfab
+.people-say
+	background: #2e404d
+
+	p
+		position: relative
+		padding-top: 75px
+		margin-bottom: 40px
+
+		&:before
+			content: ""
+			position: absolute
+			width: 44px
+			height: 33px
+			top: -5px
+			left: calc(50% - 22px)
+			background: url(../img/people_say_before.png) no-repeat
+
+	.people-say__name
+		color: $main-color
+		text-transform: uppercase
+		font-size: 16px
+		font-family: "Montserrat-Regular"
+		margin-bottom: 15px
+
+	.people-say__position
+		margin-bottom: 25px
+
+	.people-say__img
+
+		img
+			border-radius: 100%
+			border: 4px solid $main-color
+			box-shadow: 0 0 0 10px rgba(24,207,171, 0.3)
+
+.our-team
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+
+	.our-team__item
+		width: 23%
+		text-align: left
+		overflow: hidden
+		
+		.our-team__image
+			width: 100%
+			height: auto
+
+		&:hover
+
+			.our-team__big-img
+				display: block
+
+			.our-team__item-description
+				background: $main-color
+
+			.our-team__item-position
+				color: #2e4a5b
+
+
+	
+	.our-team__img
+		position: relative
+		margin-bottom: -7px
+
+	.our-team__big-img
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 7px
+		right: 0
+		background: rgba(140,154,163, 0.8)
+		display: none
+
+		img
+			display: block
+			margin: calc(50% - 60px) auto 0
+
+
+	.our-team__item-description
+		background: #2e4a5b
+		padding-top: 20px
+
+
+		h4
+			padding-left: 25px
+
+		.our-team__item-position
+			padding-left: 25px
+			color: $main-color
+			margin-bottom: 15px
+
+		.our-team__item-sicial
+			border-top: 1px solid #c7cfd3
+			overflow: hidden
+			width: 100%
+
+			li
+				border-right: 1px solid #c7cfd3
+				width: 25%
+				height: 65px
+				box-sizing: border-box
+				float: left
+				text-align: center
+				box-sizing: border-box
+
+				a
+					display: block
+					margin-top: calc(50% - 11px)
+
+				&:last-child
+					border-right: none
+
+.not-only
+	background: $durk-color url(../img/Image-Here.png) 3% 95% no-repeat
+	background-size: 60%
+	overflow: hidden
+
+	h5
+		font-size: 46px
+		font-family: "Montserrat-Regular"
+		color: #fff
+		text-transform: uppercase
+		line-height: 50px
+		margin-bottom: 100px
+
+		span
+			color: $main-color
+			font-size: 40px
+
+
+	.not-only__list-wrap
+		width: 50%
+		float: right
+		text-align: left
+		color: #f7f7f7
+		margin-bottom: 216px
+
+		li
+			margin-bottom: 22px
+			position: relative
+			padding-left: 45px
+
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				background: url(../img/not_only_li.png) no-repeat
+				width: 24px
+				height: 24px
+		
+		.not-only__list
+			margin-bottom: 65px
+
+.map
+	width: 58.456%
+	height: 550px
+	float: left
+
+.keep-in
+	margin-top: 100px
+
+.keep-in-touch
+	width: 35%
+	float: right
+	margin-top: -100px
+	text-align: left
+
+	h2
+
+		&:after
+			content: ""
+			position: absolute
+			width: 88px
+			height: 5px
+			bottom: -35px
+			left: 70px
+			background: url(../img/h2_after.png)
+	
+	form
+		margin-top: 100px
+
+		input
+			width: 100%
+			border: 1px solid #dee7e5
+			font-size: 14px
+			font-family: "Montserrat-Light"
+			padding: 17px
+			margin-bottom: 20px
+			box-sizing: border-box
+
+		textarea
+			@extend input
+			height: 180px
+
+		input[type="submit"]
+			background: $main-color
+			border-bottom: 4px solid #08bf9b
+			color: #fff
+			font-family: "Montserrat-Bold"
+			text-transform: uppercase
+			cursor: pointer
+			box-sizing: border-box
+
+.footer-wrap
+	background: #1c2b33
+	margin-top: 128px
+
+	footer
+		max-width: 1170px
+		margin: 0 auto
+		padding: 125px 15px
+		text-align: left
+		color: #c0c0c0
+		box-sizing: border-box
+		overflow: hidden
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		h3
+			color: #fff
+			text-transform: uppercase
+			font-size: 18px
+			margin-bottom: 50px
+
+	.footer__first-col
+		width: 20%
+
+		.logo-footer
+			font-size: 40px
+			font-family: "Montserrat-Regular"
+			color: #fff
+			margin-bottom: 40px
+
+			span
+				color: $main-color
+	
+		.footer__contacts
+			margin-top: 75px
+		
+			.phone
+				margin-top: 35px
+
+	.footer__second-col
+		width: 30%
+		min-width: 300px
+
+		.footer__post
+			padding-bottom: 30px
+			border-bottom: 2px solid #294453
+			margin-bottom: 30px
+
+			&:last-child
+				border-bottom: none
+				margin-bottom: 0
+			
+			h4
+				text-transform: uppercase
+
+			.footer-post__img
+				float: left
+				margin-right: 15px
+				margin-top: 7px
+
+			.footer__post-date
+				color: #f1f1f1
+				margin-top: 15px
+				margin-left: 90px
+		
+	.footer__third-col
+		width: 21%
+		min-width: 230px
+
+		.footer__tags
+			padding-bottom: 35px
+			border-bottom: 2px solid #294453
+			margin-bottom: 35px
+
+			a
+				display: inline-block
+				padding: 5px 15px
+				color: #f1f1f1
+				text-decoration: none
+				border: 2px solid #acacac
+				width: 70px
+				height: 40px
+				box-sizing: border-box
+				margin-bottom: 8px
+				margin-right: 4px
+
+				&:hover
+					background: $main-color
+					border: 2px solid $main-color
+					color: #fff
+		
+		.footer__newsletter
+
+			form
+				margin-top: 20px
+				
+				input[type="text"]
+					height: 42px
+					width: 80%
+					box-sizing: border-box
+					float: left
+					background: #22353f
+					color: #757575
+					font-size: 14px
+					font-family: "Montserrat-Light"
+					border: none
+					padding-left: 10px
+
+				input[type="submit"]
+					color: $main-color
+					border: none
+					text-transform: uppercase
+					height: 42px
+					background: #294453
+					font-family: "Montserrat-Bold"
+
+	.footer__fourth-col
+		min-width: 166px
+		width: 16%
+
+		a
+			display: block
+			float: left
+			margin-right: 9px
+			margin-bottom: 2px
+
+	.coperite
+		padding: 40px 0
+		background: #22353f
+
+		span
+			color: $main-color
+
+
+
+@import media
