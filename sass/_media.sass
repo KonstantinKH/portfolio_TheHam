@@ -1,75 +1,4 @@
 
-@media screen and (max-width: 950px) 
-
-	.header-wrap
-		header
-			padding: 0
-
-			.logo
-				margin-left: 15px
-				padding-bottom: 10px
-
-			.header__menu
-				float: right
-
-				.menu-toggle
-					display: block
-					color: #fff
-					padding: 40px 20px 20px
-
-
-				.menu
-					text-align: center 
-					margin-right: 0 
-					margin-top: 0 
-					background: #fff
-					position: fixed
-					z-index: 1
-					right: -320px
-					top: 0
-					width: 320px
-					transition: all 0.5s linear
-					height: 100%
-		
-					ul
-						margin-top: 50px
-						li
-							display: block !important
-							padding: 0 9px
-
-							a
-								text-decoration: none
-								color: #b8b8b8
-								text-transform: uppercase
-								font-family: "Montserrat-Bold"
-								font-size: 13px
-								padding-bottom: 0
-								display: inline-block
-								line-height: 48px
-								border-bottom: 1px solid #fff
-
-								&:hover
-									color: #18cfab
-									border-bottom: 1px solid #18cfab
-						
-					.menu-toggle
-						display: block
-						float: left
-
-						.active
-							color: #18cfab
-							border-bottom: 1px solid #18cfab
-				
-				.active_menu
-					right: 0
-
-				.search
-					float: none !important
-					margin-top: 29px
-					cursor: pointer
-					position: relative
-					z-index: 1
-
 
 @media screen and (max-width: 992px)
 
@@ -147,15 +76,84 @@
 				a
 					display: block
 
-
-@media screen and (min-width: 640px) and (max-width: 992px)
-
 	.news-wrap
 
 		.news-block
 
 			&:nth-child(3n)
 				margin-right: 0
+
+@media screen and (max-width: 950px) 
+
+	.header-wrap
+		header
+			padding: 0
+
+			.logo
+				margin-left: 15px
+				padding-bottom: 10px
+
+			.header__menu
+				float: right
+
+				.menu-toggle
+					display: block
+					color: #fff
+					padding: 40px 20px 20px
+
+
+				.menu
+					text-align: center 
+					margin-right: 0 
+					margin-top: 0 
+					background: #fff
+					position: fixed
+					z-index: 1
+					right: -320px
+					top: 0
+					width: 320px
+					transition: all 0.5s linear
+					height: 100%
+		
+					ul
+						margin-top: 50px
+						li
+							display: block !important
+							padding: 0 9px
+
+							a
+								text-decoration: none
+								color: #b8b8b8
+								text-transform: uppercase
+								font-family: "Montserrat-Bold"
+								font-size: 13px
+								padding-bottom: 0
+								display: inline-block
+								line-height: 48px
+								border-bottom: 1px solid #fff
+
+								&:hover
+									color: #18cfab
+									border-bottom: 1px solid #18cfab
+						
+					.menu-toggle
+						display: block
+						float: left
+
+						.active
+							color: #18cfab
+							border-bottom: 1px solid #18cfab
+				
+				.active_menu
+					right: 0
+
+				.search
+					float: none !important
+					margin-top: 29px
+					cursor: pointer
+					position: relative
+					z-index: 1
+
 
 @media screen and (max-width: 800px)
 
@@ -284,6 +282,43 @@
 			a
 				display: block
 
+@media screen and (max-width: 530px)
+	
+	.about-company
+		.about-company__block
+					
+			.about-company__tabs-content
+				height: 320px
+				
+				.about-company__history
+					overflow: hidden
+					color: #bebebe
+					text-align: left
+
+					& > p
+						margin-bottom: 25px
+
+					.history
+						.history__left
+							float: none
+
+							p
+								background: url(../img/history_item.png) no-repeat
+								padding-left: 35px
+								margin-bottom: 10px
+								width: 275px 
+								margin-left: auto
+								margin-right: auto
+
+						.history__right
+							float: none
+							p
+								background: url(../img/history_item.png) no-repeat
+								padding-left: 35px
+								margin-bottom: 10px
+								width: 275px 
+								margin-left: auto
+								margin-right: auto
 
 
 @media screen and (max-width: 480px)
@@ -330,6 +365,8 @@
 			a
 				padding-top: 10px
 				padding-bottom: 10px
+
+
 
 @media screen and (max-width: 375px)
 
@@ -386,3 +423,8 @@
 		img
 			width: 100%
 
+	.about-company
+		.about-company__block
+					
+			.about-company__tabs-content
+				height: 410px

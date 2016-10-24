@@ -316,75 +316,117 @@ section
 		.about-company__tabs
 			margin-bottom: 60px
 
-			.about-company__tabs-items
+			.about-company__tabs-item
 				display: inline-block
 				margin-right: 22px
+				color: #fff
+				text-decoration: none
+				text-transform: uppercase
+				font-size: 16px
+				font-family: "Montserrat-Bold"
+				padding-top: 6px
+				cursor: pointer
+				border-top: 1px solid #222b34
 
-				a
-					color: #fff
-					text-decoration: none
-					text-transform: uppercase
-					font-size: 16px
-					font-family: "Montserrat-Bold"
-					padding-top: 6px
+				&:hover
+					color: #18cfab
+					border-top: 1px solid #18cfab
 
-					&:hover
-						color: #18cfab
-						border-top: 1px solid #18cfab
+			.active-tab
+				color: #18cfab
+				border-top: 1px solid #18cfab
+				padding-top: 6px
+		
+		.about-company__tabs-content
+			position: relative
+			height: 280px
 
-					&:focus
-						color: #18cfab
-						border-top: 1px solid #18cfab
+			.a-company_item
+				position: absolute
+				top: 0
+				left: 0
 
-		.skill-tabs
-			color: #fff
-			text-transform: uppercase
-			font-size: 13px
-			font-family: "Montserrat-Regular"
-			text-align: left
-			margin-bottom: 100px
-			
-			.skill-tab
-				margin-bottom: 10px
-				border: 1px solid #fff
-				border-radius: 5px
-				height: 30px
+			.skill-tabs
+				color: #fff
+				text-transform: uppercase
+				font-size: 13px
+				font-family: "Montserrat-Regular"
+				text-align: left
+				margin-bottom: 100px
+				width: 100%
 				
-				span
-					height: 32px
-					display: block
-					border-top-left-radius: 5px
-					border-bottom-left-radius: 5px
-					position: relative
-					top: -1px
-					left: -1px
-					padding-left: 15px
-					line-height: 32px
-			
-			.skill-tab_interface
-				span
-					background: #9c5da5
-					width: 70%
+				.skill-tab
+					margin-bottom: 10px
+					border: 1px solid #fff
+					border-radius: 5px
+					height: 30px
+					
+					span
+						height: 32px
+						display: block
+						border-top-left-radius: 5px
+						border-bottom-left-radius: 5px
+						position: relative
+						top: -1px
+						left: -1px
+						padding-left: 15px
+						line-height: 32px
+				
+				.skill-tab_interface
+					span
+						background: #9c5da5
+						width: 70%
 
-			.skill-tab_design
-				span
-					background: #11b0de
-					width: 85%
+				.skill-tab_design
+					span
+						background: #11b0de
+						width: 85%
 
-			.skill-tab_wordpress
-				span
-					background: #d67f7f
-					width: 65%
+				.skill-tab_wordpress
+					span
+						background: #d67f7f
+						width: 65%
 
-			.skill-tab_html
-				span
-					background: #20bc9d
-					width: 87%
+				.skill-tab_html
+					span
+						background: #20bc9d
+						width: 87%
 
-			.skill-tab_app
-				span
-					background: #bb8a36
-					width: 80%
+				.skill-tab_app
+					span
+						background: #bb8a36
+						width: 80%
+
+			.about-company__biography
+				text-align: left
+				color: #bebebe
+
+				p
+					&:first-child
+						margin-bottom: 25px
+
+			.about-company__history
+				overflow: hidden
+				color: #bebebe
+				text-align: left
+
+				& > p
+					margin-bottom: 25px
+
+				.history
+					.history__left
+						float: left
+						p
+							background: url(../img/history_item.png) no-repeat
+							padding-left: 35px
+							margin-bottom: 10px
+
+					.history__right
+						float: right
+						p
+							background: url(../img/history_item.png) no-repeat
+							padding-left: 35px
+							margin-bottom: 10px
 
 .beige-section
 	background: #f8fcfe

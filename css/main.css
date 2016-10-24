@@ -371,42 +371,53 @@ section {
 .about-company .about-company__block .about-company__tabs {
   margin-bottom: 60px; }
 
-.about-company .about-company__block .about-company__tabs .about-company__tabs-items {
+.about-company .about-company__block .about-company__tabs .about-company__tabs-item {
   display: inline-block;
-  margin-right: 22px; }
-
-.about-company .about-company__block .about-company__tabs .about-company__tabs-items a {
+  margin-right: 22px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
   font-family: "Montserrat-Bold";
+  padding-top: 6px;
+  cursor: pointer;
+  border-top: 1px solid #222b34; }
+
+.about-company .about-company__block .about-company__tabs .about-company__tabs-item:hover {
+  color: #18cfab;
+  border-top: 1px solid #18cfab; }
+
+.about-company .about-company__block .about-company__tabs .active-tab {
+  color: #18cfab;
+  border-top: 1px solid #18cfab;
   padding-top: 6px; }
 
-.about-company .about-company__block .about-company__tabs .about-company__tabs-items a:hover {
-  color: #18cfab;
-  border-top: 1px solid #18cfab; }
+.about-company .about-company__block .about-company__tabs-content {
+  position: relative;
+  height: 280px; }
 
-.about-company .about-company__block .about-company__tabs .about-company__tabs-items a:focus {
-  color: #18cfab;
-  border-top: 1px solid #18cfab; }
+.about-company .about-company__block .about-company__tabs-content .a-company_item {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
-.about-company .about-company__block .skill-tabs {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs {
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
   font-family: "Montserrat-Regular";
   text-align: left;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  width: 100%; }
 
-.about-company .about-company__block .skill-tabs .skill-tab {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs .skill-tab {
   margin-bottom: 10px;
   border: 1px solid #fff;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   height: 30px; }
 
-.about-company .about-company__block .skill-tabs .skill-tab span {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs .skill-tab span {
   height: 32px;
   display: block;
   -webkit-border-top-left-radius: 5px;
@@ -419,25 +430,56 @@ section {
   padding-left: 15px;
   line-height: 32px; }
 
-.about-company .about-company__block .skill-tabs .skill-tab_interface span {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs .skill-tab_interface span {
   background: #9c5da5;
   width: 70%; }
 
-.about-company .about-company__block .skill-tabs .skill-tab_design span {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs .skill-tab_design span {
   background: #11b0de;
   width: 85%; }
 
-.about-company .about-company__block .skill-tabs .skill-tab_wordpress span {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs .skill-tab_wordpress span {
   background: #d67f7f;
   width: 65%; }
 
-.about-company .about-company__block .skill-tabs .skill-tab_html span {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs .skill-tab_html span {
   background: #20bc9d;
   width: 87%; }
 
-.about-company .about-company__block .skill-tabs .skill-tab_app span {
+.about-company .about-company__block .about-company__tabs-content .skill-tabs .skill-tab_app span {
   background: #bb8a36;
   width: 80%; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__biography {
+  text-align: left;
+  color: #bebebe; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__biography p:first-child {
+  margin-bottom: 25px; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__history {
+  overflow: hidden;
+  color: #bebebe;
+  text-align: left; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__history > p {
+  margin-bottom: 25px; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__left {
+  float: left; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__left p {
+  background: url(../img/history_item.png) no-repeat;
+  padding-left: 35px;
+  margin-bottom: 10px; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__right {
+  float: right; }
+
+.about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__right p {
+  background: url(../img/history_item.png) no-repeat;
+  padding-left: 35px;
+  margin-bottom: 10px; }
 
 .beige-section {
   background: #f8fcfe; }
@@ -1079,64 +1121,6 @@ section {
 .footer-wrap .coperite span {
   color: #18cfab; }
 
-@media screen and (max-width: 950px) {
-  .header-wrap header {
-    padding: 0; }
-  .header-wrap header .logo {
-    margin-left: 15px;
-    padding-bottom: 10px; }
-  .header-wrap header .header__menu {
-    float: right; }
-  .header-wrap header .header__menu .menu-toggle {
-    display: block;
-    color: #fff;
-    padding: 40px 20px 20px; }
-  .header-wrap header .header__menu .menu {
-    text-align: center;
-    margin-right: 0;
-    margin-top: 0;
-    background: #fff;
-    position: fixed;
-    z-index: 1;
-    right: -320px;
-    top: 0;
-    width: 320px;
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-    height: 100%; }
-  .header-wrap header .header__menu .menu ul {
-    margin-top: 50px; }
-  .header-wrap header .header__menu .menu ul li {
-    display: block !important;
-    padding: 0 9px; }
-  .header-wrap header .header__menu .menu ul li a {
-    text-decoration: none;
-    color: #b8b8b8;
-    text-transform: uppercase;
-    font-family: "Montserrat-Bold";
-    font-size: 13px;
-    padding-bottom: 0;
-    display: inline-block;
-    line-height: 48px;
-    border-bottom: 1px solid #fff; }
-  .header-wrap header .header__menu .menu ul li a:hover {
-    color: #18cfab;
-    border-bottom: 1px solid #18cfab; }
-  .header-wrap header .header__menu .menu .menu-toggle {
-    display: block;
-    float: left; }
-  .header-wrap header .header__menu .menu .menu-toggle .active {
-    color: #18cfab;
-    border-bottom: 1px solid #18cfab; }
-  .header-wrap header .header__menu .active_menu {
-    right: 0; }
-  .header-wrap header .header__menu .search {
-    float: none !important;
-    margin-top: 29px;
-    cursor: pointer;
-    position: relative;
-    z-index: 1; } }
-
 @media screen and (max-width: 992px) {
   .about-company {
     background: #222b34; }
@@ -1217,11 +1201,67 @@ section {
   .footer-wrap footer .footer__fourth-col {
     width: 100%; }
   .footer-wrap footer .footer__fourth-col a {
-    display: block; } }
-
-@media screen and (min-width: 640px) and (max-width: 992px) {
+    display: block; }
   .news-wrap .news-block:nth-child(3n) {
     margin-right: 0; } }
+
+@media screen and (max-width: 950px) {
+  .header-wrap header {
+    padding: 0; }
+  .header-wrap header .logo {
+    margin-left: 15px;
+    padding-bottom: 10px; }
+  .header-wrap header .header__menu {
+    float: right; }
+  .header-wrap header .header__menu .menu-toggle {
+    display: block;
+    color: #fff;
+    padding: 40px 20px 20px; }
+  .header-wrap header .header__menu .menu {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 0;
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+    right: -320px;
+    top: 0;
+    width: 320px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    height: 100%; }
+  .header-wrap header .header__menu .menu ul {
+    margin-top: 50px; }
+  .header-wrap header .header__menu .menu ul li {
+    display: block !important;
+    padding: 0 9px; }
+  .header-wrap header .header__menu .menu ul li a {
+    text-decoration: none;
+    color: #b8b8b8;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+    font-size: 13px;
+    padding-bottom: 0;
+    display: inline-block;
+    line-height: 48px;
+    border-bottom: 1px solid #fff; }
+  .header-wrap header .header__menu .menu ul li a:hover {
+    color: #18cfab;
+    border-bottom: 1px solid #18cfab; }
+  .header-wrap header .header__menu .menu .menu-toggle {
+    display: block;
+    float: left; }
+  .header-wrap header .header__menu .menu .menu-toggle .active {
+    color: #18cfab;
+    border-bottom: 1px solid #18cfab; }
+  .header-wrap header .header__menu .active_menu {
+    right: 0; }
+  .header-wrap header .header__menu .search {
+    float: none !important;
+    margin-top: 29px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1; } }
 
 @media screen and (max-width: 800px) {
   h1 {
@@ -1342,6 +1382,34 @@ section {
   footer .footer__fourth-col a {
     display: block; } }
 
+@media screen and (max-width: 530px) {
+  .about-company .about-company__block .about-company__tabs-content {
+    height: 320px; }
+  .about-company .about-company__block .about-company__tabs-content .about-company__history {
+    overflow: hidden;
+    color: #bebebe;
+    text-align: left; }
+  .about-company .about-company__block .about-company__tabs-content .about-company__history > p {
+    margin-bottom: 25px; }
+  .about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__left {
+    float: none; }
+  .about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__left p {
+    background: url(../img/history_item.png) no-repeat;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto; }
+  .about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__right {
+    float: none; }
+  .about-company .about-company__block .about-company__tabs-content .about-company__history .history .history__right p {
+    background: url(../img/history_item.png) no-repeat;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto; } }
+
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 52px !important;
@@ -1423,4 +1491,6 @@ section {
     width: 100%;
     margin-right: 0 !important; }
   .news-block img {
-    width: 100%; } }
+    width: 100%; }
+  .about-company .about-company__block .about-company__tabs-content {
+    height: 410px; } }
