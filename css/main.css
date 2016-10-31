@@ -147,7 +147,7 @@ section {
   white-space: nowrap; }
 
 .header-wrap {
-  background: rgba(68, 67, 62, 0.7);
+  background: rgba(68, 67, 62, 0.85);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
@@ -213,7 +213,7 @@ section {
   color: #18cfab;
   border-bottom: 1px solid #18cfab; }
 
-.header-wrap .header__menu .menu ul li .active {
+.header-wrap .header__menu .menu ul li .menu__active-item {
   color: #18cfab;
   border-bottom: 1px solid #18cfab; }
 

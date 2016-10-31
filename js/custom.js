@@ -47,16 +47,63 @@ $(document).ready(function(){
 
 	/*  menu-toggle  */
 
-	$(".menu-toggle").click(function() {
+$(".menu-toggle").click(function() {
 
-		$('.menu').toggleClass('active_menu');
-		if ($('.menu').hasClass('active_menu')) {
-		body.addClass('hide');
-		} else {
-		body.removeClass('hide');
-		}
+	$('.menu').toggleClass('active_menu');
+	
 });
 
+$(".menu ul li a").click(function(){
+
+	$(".menu").removeClass("active_menu");
+	$(".menu ul li a").removeClass("menu__active-item");
+	$(this).addClass("menu__active-item");
+});
+
+
+/*   scroll to section   */
+
+var offset = $(".header-wrap").height() + 30;
+
+$(".to_s-price-table").click(function() {
+  $("html, body").animate({ scrollTop: $(".s-price-table").offset().top - 30 }, "slow");
+  return false;
+});
+
+$(".to_people-say").click(function() {
+  $("html, body").animate({ scrollTop: $(".people-say").offset().top - 30 }, "slow");
+  return false;
+});
+
+$(".to_section-2").click(function() {
+  $("html, body").animate({ scrollTop: $(".section-2").offset().top - 30 }, "slow");
+  return false;
+});
+
+$(".to_s-about-company").click(function() {
+  $("html, body").animate({ scrollTop: $(".s-about-company").offset().top - 30 }, "slow");
+  return false;
+});
+
+$(".to_s-our-works").click(function() {
+  $("html, body").animate({ scrollTop: $(".s-our-works").offset().top - 30 }, "slow");
+  return false;
+});
+
+$(".to_s-our-services").click(function() {
+  $("html, body").animate({ scrollTop: $(".s-our-services").offset().top - 30 }, "slow");
+  return false;
+});
+
+$(".to_our-team").click(function() {
+  $("html, body").animate({ scrollTop: $(".s-our-team").offset().top - 30 }, "slow");
+  return false;
+});
+
+$(".contacts").click(function() {
+  $("html, body").animate({ scrollTop: $(".keep-in-touch").offset().top - offset }, "slow");
+  return false;
+});
 
 
 	/*  animation  */
