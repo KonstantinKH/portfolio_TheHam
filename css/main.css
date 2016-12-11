@@ -274,10 +274,16 @@ section {
   padding-bottom: 145px; }
 
 .main-section__buttons {
-  margin-bottom: 140px; }
+  margin-bottom: 140px;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;}
 
 .main-section__buttons a {
-  margin: 0 24.5px; }
+  margin: 0 24.5px;
+  display: block;
+  width: 170px;
+  box-sizing: border-box; }
 
 .section-wrap__slider {
   position: absolute;
