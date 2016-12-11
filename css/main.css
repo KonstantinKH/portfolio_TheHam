@@ -125,7 +125,7 @@ section {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 25px 28px 25px;
+  padding: 22px 28px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   font-family: "Montserrat-Bold";
@@ -139,7 +139,7 @@ section {
   text-transform: uppercase;
   background: url(../img/rigth_button_bg.png) no-repeat;
   baground-size: cover;
-  padding: 25px 28px;
+  padding: 22px 28px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   font-family: "Montserrat-Bold";
