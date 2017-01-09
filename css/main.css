@@ -1424,6 +1424,9 @@ section {
   .main-section__buttons {
     text-align: center;
      }
+  .main-section__buttons a{
+    margin-bottom: 20px;
+     }    
   .main-section__after-title {
     padding-bottom: 50px; }
   .feature {
