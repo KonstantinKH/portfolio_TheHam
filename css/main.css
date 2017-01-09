@@ -277,6 +277,7 @@ section {
   margin-bottom: 140px;
   overflow: hidden; 
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;}
 
 .main-section__buttons a {
@@ -1422,7 +1423,8 @@ section {
     line-height: 64px; }
   .main-section__buttons {
     line-height: 90px;
-    text-align: center; }
+    text-align: center;
+     }
   .main-section__after-title {
     padding-bottom: 50px; }
   .feature {
